@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kits Encantados · Desenhos pra colorir e virar memória</title>
+<meta name="description" content="Kits de atividades para imprimir com o Tuti e o Fumaça: páginas para colorir, labirintos, caça-palavras e mais. Baixe uma página grátis.">
+<meta property="og:title" content="Kits Encantados · Vem pra Vila Lilás!">
+<meta property="og:description" content="Desenhos pra colorir e virar memória. Kit de Natal com 21 páginas A4 por R$ 12,90 e uma página grátis.">
+<meta property="og:image" content="https://zavattaro.github.io/kitsencantados/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="icone.png">
+<style>
+@font-face{font-family:Fredoka;src:url(fredoka.ttf) format("truetype");font-weight:300 700;font-display:swap}
+:root{--lil:#9b7bd0;--lil2:#c9a7e8;--lil3:#efe4fb;--roxo:#5e3f94;--rosa:#f08cbe;--creme:#fff6e9;--estrela:#ffcd50;--tx:#3a2a55}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Fredoka,system-ui,sans-serif;color:var(--tx);background:var(--creme);line-height:1.5;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:1060px;margin:0 auto;padding:0 18px}
+.topo{background:var(--roxo);color:#fff;text-align:center;font-size:.95rem;padding:8px 12px;font-weight:500}
+.topo b{color:var(--estrela)}
+header.hero{background:radial-gradient(circle at 20% 10%,#b996e6 0,#7d5bb8 45%,#4b2f7d 100%);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center;padding-top:46px;padding-bottom:56px}
+.estrelas{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(2px 2px at 10% 20%,#fff8 50%,transparent 51%),radial-gradient(2px 2px at 80% 15%,#fff9 50%,transparent 51%),radial-gradient(3px 3px at 60% 70%,#ffe9a8 50%,transparent 51%),radial-gradient(2px 2px at 30% 85%,#fff7 50%,transparent 51%),radial-gradient(2px 2px at 90% 60%,#fff8 50%,transparent 51%)}
+.marca{display:inline-block;background:#ffffff22;border:1px solid #ffffff55;border-radius:99px;padding:6px 14px;font-weight:600;letter-spacing:.3px;margin-bottom:16px}
+h1{font-size:clamp(2.1rem,5.2vw,3.5rem);line-height:1.08;font-weight:700;margin-bottom:16px;text-shadow:0 3px 0 #3d2566}
+h1 em{font-style:normal;color:var(--estrela)}
+.hero p.sub{font-size:1.18rem;opacity:.95;margin-bottom:24px;max-width:34ch}
+.botoes{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:1.12rem;border-radius:99px;padding:15px 26px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.compra{background:var(--estrela);color:#3d2566;box-shadow:0 6px 0 #c9971f}
+.btn.gratis{background:#fff;color:var(--roxo);box-shadow:0 6px 0 #c9b6e6}
+.btn.rosa{background:var(--rosa);color:#fff;box-shadow:0 6px 0 #c4639a}
+.micro{margin-top:16px;font-size:.95rem;opacity:.9}
+.hero-img{position:relative}
+.hero-img img{border-radius:32px;border:6px solid #fff;box-shadow:0 22px 50px #22104488;transform:rotate(2deg)}
+.selo{position:absolute;left:-14px;bottom:22px;background:var(--rosa);color:#fff;font-weight:700;border-radius:20px;padding:10px 16px;transform:rotate(-6deg);box-shadow:0 8px 20px #0003;font-size:1.05rem}
+section{padding:64px 0}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);line-height:1.15;color:var(--roxo);margin-bottom:12px}
+.lead{font-size:1.12rem;max-width:60ch;margin-bottom:26px}
+.gratis-box{background:var(--lil3)}
+.gratis-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:center}
+.folha{background:#fff;border-radius:18px;padding:12px;box-shadow:0 16px 40px #5e3f9433;transform:rotate(-2deg)}
+.kit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0}
+.kit-grid img{background:#fff;border-radius:14px;padding:6px;box-shadow:0 8px 22px #5e3f9426;aspect-ratio:2/3;object-fit:cover}
+.lista{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:10px 0 28px}
+.card{background:#fff;border-radius:22px;padding:20px;box-shadow:0 8px 24px #5e3f941a;border:2px solid var(--lil3)}
+.card h3{color:var(--roxo);font-size:1.25rem;margin-bottom:6px}
+.card p{font-size:1rem}
+.preco{display:flex;flex-wrap:wrap;align-items:center;gap:18px;background:#fff;border:3px dashed var(--lil);border-radius:26px;padding:22px 24px}
+.preco .valor{font-size:2.6rem;font-weight:700;color:var(--roxo);line-height:1}
+.preco .valor small{display:block;font-size:.95rem;font-weight:500;color:var(--tx)}
+.faixa{background:var(--estrela);color:#3d2566;font-weight:700;text-align:center;padding:14px;border-radius:16px;margin-top:18px}
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.passo{text-align:center;background:#fff;border-radius:24px;padding:26px 18px;box-shadow:0 8px 24px #5e3f941a}
+.passo .n{width:56px;height:56px;border-radius:50%;background:var(--lil);color:#fff;font-size:1.6rem;font-weight:700;display:grid;place-items:center;margin:0 auto 10px}
+.persos{background:linear-gradient(180deg,var(--lil3),var(--creme))}
+.persos-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.persos-grid img{border-radius:28px;box-shadow:0 16px 40px #5e3f9433}
+.persos p{margin-bottom:12px;font-size:1.1rem}
+.livros{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.livro{display:flex;gap:16px;align-items:center;background:#fff;border-radius:22px;padding:14px;box-shadow:0 8px 24px #5e3f941a}
+.livro img{width:120px;border-radius:14px}
+.livro h3{font-size:1.1rem;color:var(--roxo)}
+.livro a{display:inline-block;margin-top:8px;font-weight:700;color:var(--roxo)}
+.breve{display:flex;flex-wrap:wrap;gap:10px}
+.breve span{background:#fff;border:2px solid var(--lil2);border-radius:99px;padding:8px 16px;font-weight:600}
+details{background:#fff;border-radius:18px;padding:16px 20px;margin-bottom:12px;box-shadow:0 6px 18px #5e3f9414}
+summary{font-weight:700;cursor:pointer;color:var(--roxo);font-size:1.08rem}
+details p{margin-top:8px}
+.final{background:var(--roxo);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final .botoes{justify-content:center}
+footer{background:#2e1c4d;color:#d9ccef;text-align:center;padding:26px 16px;font-size:.92rem}
+footer a{color:#fff}
+@media(max-width:820px){
+ .hero .wrap,.gratis-grid,.persos-grid{grid-template-columns:1fr}
+ .hero .wrap{padding-top:30px;gap:26px}
+ .hero-img{max-width:420px;margin:0 auto}
+ .kit-grid{grid-template-columns:repeat(2,1fr)}
+ .lista,.passos,.livros{grid-template-columns:1fr}
+ .btn{width:100%;justify-content:center}
+ .folha{max-width:300px;margin:0 auto}
+ section{padding:48px 0}
+}
+</style>
+</head>
+<body>
+<div class="topo">🎄 <b>Kit de Natal</b> chegou na Vila Lilás · entrega na hora</div>
+
+<header class="hero">
+ <div class="estrelas"></div>
+ <div class="wrap">
+  <div>
+   <span class="marca">✨ Kits Encantados</span>
+   <h1>Desenhos pra colorir e <em>virar memória</em></h1>
+   <p class="sub">Atividades encantadas para imprimir em casa ou na sala de aula: páginas para colorir, labirintos, caça-palavras, ligue os pontos e muito mais, com o Tuti e o Fumaça.</p>
+   <div class="botoes">
+    <a class="btn compra" href="https://pay.kiwify.com.br/5QLmY93">🎄 Quero o Kit de Natal · R$ 12,90</a>
+    <a class="btn gratis" href="#gratis">⭐ Baixar página grátis</a>
+   </div>
+   <p class="micro">PDF em A4 · você recebe na hora · imprime quantas vezes quiser</p>
+  </div>
+  <div class="hero-img">
+   <img src="hero.jpg" alt="Tuti, a fantasminha de laço lilás, e Fumaça, o gatinho preto, abraçados ao lado de uma árvore de Natal" width="900" height="900">
+   <div class="selo">💜 Colorir juntos é mágico</div>
+  </div>
+ </div>
+</header>
+
+<section class="gratis-box" id="gratis">
+ <div class="wrap gratis-grid">
+  <div class="folha"><img src="estrelinha.jpg" alt="Página para colorir: a estrelinha brilhante com flocos de neve" loading="lazy" width="500" height="707"></div>
+  <div>
+   <h2>Comece com uma estrelinha, por nossa conta ⭐</h2>
+   <p class="lead">Quer conhecer a Vila Lilás antes de tudo? Baixe de graça a página <b>"A estrelinha brilhante"</b>, imprima e escolha as cores. Sem cadastro: é só clicar e baixar.</p>
+   <a class="btn rosa" href="estrelinha-gratis.pdf" download>⬇️ Baixar a Estrelinha (PDF grátis)</a>
+   <p class="micro" style="color:var(--tx)">1 página A4 para colorir</p>
+  </div>
+ </div>
+</section>
+
+<section id="kit">
+ <div class="wrap">
+  <h2>Kits Encantados: Natal na Vila Lilás 🎄</h2>
+  <p class="lead">O Natal chegou na Vila Lilás, e o Tuti e o Fumaça prepararam um kit inteirinho para você imprimir, colorir e brincar.</p>
+  <div class="kit-grid">
+   <img src="colorir1.jpg" alt="Página para colorir de Natal" loading="lazy">
+   <img src="colorir2.jpg" alt="Página para colorir de Natal" loading="lazy">
+   <img src="ativ1.jpg" alt="Atividade: labirinto" loading="lazy">
+   <img src="ativ2.jpg" alt="Atividade: caça-palavras" loading="lazy">
+   <img src="colorir3.jpg" alt="Página para colorir de Natal" loading="lazy">
+   <img src="ativ3.jpg" alt="Atividade: ligue os pontos" loading="lazy">
+   <img src="colorir4.jpg" alt="Página para colorir de Natal" loading="lazy">
+   <img src="ativ4.jpg" alt="Atividade: vamos contar" loading="lazy">
+  </div>
+  <div class="lista">
+   <div class="card"><h3>🖍️ 8 páginas para colorir</h3><p>Pinheirinho, Fumaça na meia de Natal, boneco de neve, chocolate quentinho, presente surpresa, estrelinha, luzinhas da Dona Coruja e descida de trenó.</p></div>
+   <div class="card"><h3>🧩 8 atividades</h3><p>Siga o caminho, vamos contar, dois labirintos, dois ligue os pontos, caça-palavras de Natal e "Meu presente de Natal" para desenhar.</p></div>
+   <div class="card"><h3>✅ Respostas e dicas</h3><p>Gabarito dos labirintos e do caça-palavras, mais uma página com dicas de impressão.</p></div>
+  </div>
+  <div class="preco">
+   <div class="valor">R$ 12,90<small>pagamento único · 21 páginas A4</small></div>
+   <a class="btn compra" href="https://pay.kiwify.com.br/5QLmY93">🎁 Garantir meu Kit de Natal</a>
+  </div>
+  <div class="faixa">⚡ Entrega na hora: pagou, recebeu. O PDF chega por e-mail e fica na sua área de membros.</div>
+ </div>
+</section>
+
+<section style="background:var(--lil3)">
+ <div class="wrap">
+  <h2 style="text-align:center;margin-bottom:26px">Simples como um passe de mágica 🪄</h2>
+  <div class="passos">
+   <div class="passo"><div class="n">1</div><h3>Compre 🛒</h3><p>Clique no botão e pague com segurança pela Kiwify.</p></div>
+   <div class="passo"><div class="n">2</div><h3>Receba 📩</h3><p>Na mesma hora, o kit chega no seu e-mail e na sua área de membros.</p></div>
+   <div class="passo"><div class="n">3</div><h3>Imprima 🖨️</h3><p>Imprima em A4, separe os lápis e pronto: a Vila Lilás está na sua mesa.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="persos">
+ <div class="wrap persos-grid">
+  <img src="cena-casa.jpg" alt="Tuti e Fumaça tomando chocolate quente em casa, com a árvore de Natal acesa lá fora" loading="lazy">
+  <div>
+   <h2>Prazer, Tuti e Fumaça! 👻🐈‍⬛</h2>
+   <p><b>Tuti</b> é uma fantasminha de laço lilás que não assusta ninguém, só faz carinho.</p>
+   <p><b>Fumaça</b> é um gatinho preto de gravatinha laranja, curioso e sempre pronto para mais uma aventura.</p>
+   <p>Os dois moram na <b>Vila Lilás</b>, um lugarzinho onde cada estação vira festa. São personagens originais, criados só para os Kits Encantados.</p>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <h2>As aventuras também viraram livro 📚</h2>
+  <p class="lead">Histórias do Tuti e do Fumaça em eBook Kindle, escritas por Nina Lunar. Dica: leia a história de Natal e depois colora as cenas com o kit. 🎄</p>
+  <div class="livros">
+   <div class="livro"><img src="livro1.jpg" alt="Capa: Tuti, Fumaça e a Estrelinha da Abóbora" loading="lazy"><div><h3>🎃 Tuti, Fumaça e a Estrelinha da Abóbora</h3><p>Halloween · R$ 9,99</p><a href="https://www.amazon.com.br/dp/B0HQ4XW75J">Ver na Amazon →</a></div></div>
+   <div class="livro"><img src="livro2.jpg" alt="Capa: Tuti, Fumaça e a Estrela de Natal" loading="lazy"><div><h3>⭐ Tuti, Fumaça e a Estrela de Natal</h3><p>Natal · R$ 5,99</p><a href="https://www.amazon.com.br/dp/B0HQ4ZC8PT">Ver na Amazon →</a></div></div>
+  </div>
+ </div>
+</section>
+
+<section style="background:var(--lil3)">
+ <div class="wrap">
+  <h2>Novos kits estão saindo do forno da Vila Lilás 🌈</h2>
+  <p class="lead">Em breve. Siga <a href="https://www.instagram.com/kitencantado/"><b>@kitencantado</b></a> no Instagram para ver quando cada um chegar.</p>
+  <div class="breve"><span>☀️ Férias de Verão com Solzinhos</span><span>🐄 Bichinhos da Fazenda</span><span>🎒 Volta às aulas</span><span>🎭 Carnaval</span><span>🐰 Páscoa</span><span>🧙‍♀️ Bruxinhas e Fantasminhas</span></div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <h2>Perguntas frequentes</h2>
+  <details><summary>🖨️ Preciso de impressora colorida?</summary><p>Não! Os desenhos são só de contorno, para você colorir, e as atividades funcionam muito bem em preto e branco.</p></details>
+  <details><summary>🔁 Posso imprimir várias vezes?</summary><p>Pode! Comprou uma vez, imprime quantas vezes quiser, para repetir a página favorita ou para a turma toda.</p></details>
+  <details><summary>📩 Como recebo o kit?</summary><p>Assim que o pagamento é aprovado, você recebe o acesso por e-mail e o PDF fica disponível na sua área de membros da Kiwify, pronto para baixar.</p></details>
+  <details><summary>🏫 Posso usar na escola ou na sala de aula?</summary><p>Sim! O kit é para uso pessoal, em casa, e em sala de aula. Só pedimos que você não revenda nem compartilhe o arquivo.</p></details>
+  <details><summary>💜 E se eu não gostar?</summary><p>Compras pela internet têm 7 dias para arrependimento. É só pedir o reembolso pela Kiwify dentro desse prazo.</p></details>
+  <details><summary>💬 Ficou outra dúvida?</summary><p>Fale com a gente pelo direct do Instagram <a href="https://www.instagram.com/kitencantado/">@kitencantado</a>.</p></details>
+ </div>
+</section>
+
+<section class="final">
+ <div class="wrap">
+  <h2>Bora colorir uma memória hoje? 💜</h2>
+  <p class="lead" style="margin:0 auto 24px">Imprima, pinte junto e guarde. A Vila Lilás está esperando suas cores.</p>
+  <div class="botoes">
+   <a class="btn compra" href="https://pay.kiwify.com.br/5QLmY93">🎄 Quero o Kit de Natal · R$ 12,90</a>
+   <a class="btn gratis" href="#gratis">⭐ Página grátis</a>
+  </div>
+ </div>
+</section>
+
+<footer>
+ Kits Encantados · Vila Lilás 💜<br>
+ Ilustrações criadas com IA · Personagens originais<br>
+ Instagram: <a href="https://www.instagram.com/kitencantado/">@kitencantado</a> · Pagamentos processados pela Kiwify
+</footer>
+</body>
+</html>
